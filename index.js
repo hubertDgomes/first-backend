@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static(path.join(__dirname , "public") )) //3rd mistake
 
-app.set("view engine" , "ejs") // 2nd mistake
+app.set("view engine" , "ejs") // 2nd mistakes
 
 app.get("/", function(req , res){
     res.render("index") //1st mistake
