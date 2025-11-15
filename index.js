@@ -14,6 +14,14 @@ app.get("/", function(req , res){
     res.render("index") //1st mistake
 })
 
+app.get("/profile/:anyname" , function(req,res){ //This is used for dynamic routing
+    res.send(`This is the dynamic routes`)
+})
+
+app.get("/profile" , function(req,res){
+    res.send("This is the profile part")
+})
+
 app.listen(3000, function(){
     console.log("The server is working");
 })
