@@ -15,7 +15,7 @@ app.get("/", function(req , res){
 })
 
 app.get("/profile/:anyname" , function(req,res){ //This is used for dynamic routing
-    res.send(`This is the dynamic routes`)
+    res.send(`This is the profle part of ${req.params.anyname}`)
 })
 
 app.get("/profile" , function(req,res){
