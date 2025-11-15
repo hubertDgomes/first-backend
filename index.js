@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const path = require("path")
-// No "ejs" needed to be imported or in a variable.
+// No "ejs" needed to be imported or in a variable.ss
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
